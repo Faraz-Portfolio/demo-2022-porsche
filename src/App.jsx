@@ -12,7 +12,6 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import Car from "./Car";
 import Cone from "./Cone";
-import Tag from "./Tag";
 
 export default function App() {
   return (
@@ -61,7 +60,6 @@ export default function App() {
         <OrbitControls
           autoRotate
           autoRotateSpeed={0.5}
-          enableZoom={false}
           enablePan={false}
           minPolarAngle={0}
           maxPolarAngle={Math.PI / 2.15}
@@ -69,7 +67,6 @@ export default function App() {
         />
         <PerspectiveCamera makeDefault position={[-30, 100, 120]} fov={35} />
       </Canvas>
-      <Tag />
     </>
   );
 }
