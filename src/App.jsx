@@ -64,6 +64,7 @@ export default function App() {
           minPolarAngle={0}
           maxPolarAngle={Math.PI / 2.15}
           makeDefault
+          target={[-5, 0, 0]}
         />
         <PerspectiveCamera makeDefault position={[-30, 100, 120]} fov={35} />
       </Canvas>
