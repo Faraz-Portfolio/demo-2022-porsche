@@ -2,10 +2,10 @@ import { useGLTF } from "@react-three/drei";
 import { useEffect } from "react";
 import { Color } from "three";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 export default function Car(props) {
-  const { nodes, materials } = useGLTF(
-    "/demo-2022-porsche/porsche-transformed-v2.glb"
-  );
+  const { nodes, materials } = useGLTF(baseUrl + "porsche-transformed-v2.glb");
 
   useEffect(() => {
     materials.paint.color = new Color("#ff9700").convertLinearToSRGB();
